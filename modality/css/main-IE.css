@@ -1,0 +1,62 @@
+body {
+	font-family: sans-serif;
+	font-size: small;
+	}
+	
+#topbanner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 6em;
+	background-color: #d4dff1;
+	color: black;
+	width: 100%;
+	text-align: center;
+	border-bottom: solid thin gray;
+	}
+#sidebar {
+	position: absolute;
+	left: 0;
+	top: 7em;
+	width: 10em;
+	height: 30em;
+	background-color: #e8e8e8;
+	color: black;
+	border-top: solid thin gray;
+	border-right: solid thin gray;
+	border-bottom: solid thin gray;
+	border-left: none;
+	}
+#main {
+	width: auto;
+	margin-top: 7em;
+	padding-left: 11em;
+	padding-right: 1em;
+	border: none;
+	}
+
+#bottombanner {
+	float: right; 
+	margin-top: 5em; 
+	margin-right: 5em;
+}
+
+ul.schedule li {
+	list-style-type: none;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	border-bottom: thin solid gray;
+}
+
+ul.schedule ul li {
+	margin-left: 9em;
+	padding-top: 0;
+	padding-bottom: 0.2em;
+	list-style-type: circle;
+	border-bottom: none;
+}
+
+
+
+
+

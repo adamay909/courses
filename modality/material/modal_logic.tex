@@ -1,0 +1,172 @@
+\documentclass[11pt]{scrartcl}
+
+
+ 
+\usepackage{geometry}
+
+\geometry{verbose,letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+
+
+ \usepackage{xfrac} 
+
+\usepackage{amsmath} 
+
+\usepackage{amssymb} 
+
+\usepackage{bussproofs}
+
+ \usepackage{fontspec} 
+ 
+ \usepackage{xunicode} 
+ 
+ \usepackage{xltxtra} 
+ 
+ \defaultfontfeatures{Mapping=tex-text} 
+ 
+ %\setmainfont{Thorndale AMT}
+ 
+
+ \setlength{\parindent}{0em}
+ 
+ \setlength{\parskip}{1em}
+ 
+ \begin{document}
+
+ \section*{Systems of Modal Logic}
+
+
+
+All systems of modal logic are extensions of propositional logic. They accept a
+common inference rule but differ by their characteristic axioms (more
+precisely, axiom schemata).  To formulate the inference rule and axioms, we
+introduce the following primitive operator: 
+
+$\Box\phi$: ``it is necessarily true that $\phi$''.
+
+It is convenient to also introduce the following operator:
+
+$\Diamond\phi \Longleftrightarrow \neg\Box\neg\phi$: ``it is possibly true that
+$\phi$'' ($\phi$ is not necessarily false iff.  it is possibly true).
+
+Now to the modal systems. The common inference rule is:
+
+\begin{description}
+
+ \item[Necessitation] If $\phi$ is a truth of logic, infer $\Box\phi$.
+
+  \hspace{5em} \AxiomC{$\phi$} \UnaryInfC{$\Box\phi$}\DisplayProof
+
+
+\end{description}
+
+
+\subsection*{The Lewis Modal Systems}
+
+\begin{description}
+
+  \setlength{\itemsep}{2em}
+
+\item[System K]
+
+Characteristic Axiom: $\Box(\phi\supset\psi)\supset(\Box\phi\supset\Box\psi)$
+
+If it is necessarily true that if $\phi$ then $\psi$, then: if it is
+necessarily true that $\phi$, then it is also necessarily true that $\psi$. 
+
+\item[System D]
+
+System K plus
+
+Characteristic Axiom: $\Box\phi\supset\Diamond\phi$
+
+If $\phi$ is necessarily true, then it is possibly true.
+
+\item[System T]
+
+System K plus
+
+Characteristic Axiom: $\Box\phi\supset\phi$
+
+If it is necessarily true that $\phi$, then it is actually true that $\phi$. 
+
+\item[System B]
+
+System T plus
+
+Characteristic Axiom: $\Diamond\Box\phi\supset\phi$
+
+If $\phi$ is possibly necessarily true, then $\phi$ is actually true.
+
+
+\item[System S4]
+
+System T plus
+
+Characteristic Axiom: $\Box\phi\supset\Box\Box\phi$
+
+Whatever is necessarily true is necessarily necessary. 
+
+\item[System S5]
+
+System T plus
+
+Characteristic Axiom: $\Diamond\Box\phi\supset\Box\phi$
+
+Whatever is possibly necessary is necessary.
+
+
+\end{description}
+
+\vskip 4em
+
+\section*{Exercises}
+
+\begin{enumerate}
+
+ \item Show that the following are provable in all modal systems:
+
+  \begin{itemize}
+
+   \item $\Box(p\wedge q)\supset(\Box p \supset \Box q)$ 
+
+   \item $(\Box p \vee \Box q) \supset \Box(p \vee q)$
+
+   \item $\Box(p \supset q) \supset (\Diamond p \supset \Diamond q)$
+
+  \end{itemize}
+
+ \item For each of the formulae in the previous question, explain in plain
+  English (no formal symbols!) why they are plausible.
+
+ \item Prove that the characteristic axioms of B and S4 are theorems of S5.
+
+ \item An alternative reading of $\Box\phi$ is: it will always be the case that
+  $\phi$. 
+  
+  \begin{enumerate} 
+   
+  \item On this reading, what would $\Diamond\phi$ mean? 
+
+  \item How plausible or implausible are the various modal systems under this
+   interpretation? Explain for each system.
+
+ \end{enumerate}
+
+\item Here is yet another reading of the modal symbols. Let $\Diamond p$ mean
+ that the truth of $p$ is consistent with your knowledge (roughly, for all you
+ know, $p$ could be true). 
+
+ \begin{enumerate}
+
+  \item On this reading, what would $\Box\phi$ mean?
+
+  \item  How plausible or implausible are the various modal systems under this
+   interpretation? Explain for each system.
+
+ \end{enumerate}
+
+\end{enumerate}
+  
+  
+  \end{document}
+
